@@ -1,0 +1,35 @@
+<div class="calculator-frame">
+  <div class="row">
+    <div class="screen col-sm-12">{{ this.value }}</div>
+  </div>
+  <div class="row">
+      <button id="ac" (click)="onClickReset()" class="block col-sm-6">AC</button>
+      <button id="percent" (click)="getVal('%')" class="block col-sm-3">%</button>
+      <button id="devide" (click)="getVal('/')" class="block col-sm-3">/</button>
+  </div>
+  <div class="row">
+      <button id="seven" (click)="getVal('7')" class="block col-sm-3">7</button>
+      <button id="eight" (click)="getVal('8')" class="block col-sm-3">8</button>
+      <button id="nine" (click)="getVal('9')" class="block col-sm-3">9</button>
+      <button id="multiply" (click)="getVal('*')" class="block col-sm-3">x</button>
+  </div>
+  <div class="row">
+      <button id="four" (click)="getVal('4')" class="block col-sm-3">4</button>
+      <button id="five" (click)="getVal('5')" class="block col-sm-3">5</button>
+      <button id="six" (click)="getVal('6')" class="block col-sm-3">6</button>
+      <button id="subtract" (click)="getVal('-')" class="block col-sm-3">-</button>
+  </div>
+  <div class="row">
+      <button id="one" (click)="getVal('1')" class="block col-sm-3">1</button>
+      <button id="two" (click)="getVal('2')" class="block col-sm-3">2</button>
+      <button id="three" (click)="getVal('3')" class="block col-sm-3">3</button>
+      <button id="sum" (click)="getVal('+')" class="block col-sm-3">+</button>
+  </div>
+  <div class="row">
+      <button id="zero" (click)="getVal('0')" class="block col-sm-6">0</button>
+      <button id="decimal" (click)="getVal('.')" class="block col-sm-3">.</button>
+      <button id="equal" (click)="doOperation()" class="block col-sm-3">=</button>
+  </div>
+</div>
+
+
